@@ -1,11 +1,16 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { Text, View, StyleSheet } from 'react-native'
+// import { createDrawerNavigator } from '@react-navigation/drawer'
+// import { createNativeStackNavigator } from '@react-navigation/native-stack'
+// import { Text, View, StyleSheet } from 'react-native'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import { Ionicons } from '@expo/vector-icons'
-
-const Stack = createNativeStackNavigator()
+import HomeScreen from './Components/HomeScreen'
+import NotificationScreen from './Components/NotificationScreen'
+import SearchScreen from './Components/SearchScreen'
+import SettingsScreen from './Components/SettingsScreen'
+// import myDrawer from './Components/DrawerScreen'
+// const Stack = createNativeStackNavigator()
 const Tab = createMaterialBottomTabNavigator()
 
 export default function App() {
@@ -61,44 +66,3 @@ export default function App() {
     </NavigationContainer>
   )
 }
-
-function SettingsScreen() {
-  return (
-    <View style={styles.container}>
-      <Text>Settings!</Text>
-    </View>
-  )
-}
-
-function HomeScreen() {
-  return (
-    <View style={styles.container}>
-      <Text>Home!</Text>
-    </View>
-  )
-}
-
-function NotificationScreen() {
-  return (
-    <View style={styles.container}>
-      <Text>Notifications!</Text>
-    </View>
-  )
-}
-
-function SearchScreen() {
-  return (
-    <View style={styles.container}>
-      <Text>Search!</Text>
-    </View>
-  )
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'lightgrey',
-  },
-})
