@@ -1,10 +1,10 @@
-import React from 'react'
 import { Text, View, StyleSheet } from 'react-native'
+import React from 'react'
 
-export default function HomeScreen() {
+export default function SignInScreen() {
   return (
     <View style={styles.container}>
-      <Text>Home!</Text>
+      <Text>Sign In!</Text>
     </View>
   )
 }
@@ -14,6 +14,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'lightgrey',
   },
 })

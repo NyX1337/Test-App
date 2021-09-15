@@ -1,10 +1,10 @@
 import { Text, View, StyleSheet } from 'react-native'
 import React from 'react'
 
-export default function SettingsScreen() {
+export default function NotificationScreen() {
   return (
     <View style={styles.container}>
-      <Text>Settings!</Text>
+      <Text>Notifications!</Text>
     </View>
   )
 }
@@ -14,6 +14,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'lightgrey',
   },
 })

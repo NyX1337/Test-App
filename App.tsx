@@ -1,15 +1,13 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-// import { createDrawerNavigator } from '@react-navigation/drawer'
 // import { createNativeStackNavigator } from '@react-navigation/native-stack'
 // import { Text, View, StyleSheet } from 'react-native'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import { Ionicons } from '@expo/vector-icons'
-import HomeScreen from './Components/HomeScreen'
-import NotificationScreen from './Components/NotificationScreen'
-import SearchScreen from './Components/SearchScreen'
-import SettingsScreen from './Components/SettingsScreen'
-// import myDrawer from './Components/DrawerScreen'
+import HomeScreen from './Screens/HomeScreen'
+import NotificationScreen from './Screens/NotificationScreen'
+import SearchScreen from './Screens/SearchScreen'
+import SettingsScreen from './Screens/SettingsScreen'
 // const Stack = createNativeStackNavigator()
 const Tab = createMaterialBottomTabNavigator()
 
