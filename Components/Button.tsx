@@ -10,7 +10,7 @@ import { Ionicons } from '@expo/vector-icons'
 
 interface CoreButtonProps {
   label: string
-  onPress: () => void
+  onPress?: () => void
   icon?: any
   loading?: boolean
   styleOverride?: ViewStyle

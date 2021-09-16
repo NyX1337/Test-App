@@ -1,15 +1,16 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-// import { createNativeStackNavigator } from '@react-navigation/native-stack'
 // import { Text, View, StyleSheet } from 'react-native'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import { Ionicons } from '@expo/vector-icons'
+import { MaterialCommunityIcons } from '@expo/vector-icons'
 import HomeScreen from './Screens/HomeScreen'
-import NotificationScreen from './Screens/NotificationScreen'
+import ProfileScreen from './Screens/ProfileScreen'
 import SearchScreen from './Screens/SearchScreen'
 import SettingsScreen from './Screens/SettingsScreen'
-// const Stack = createNativeStackNavigator()
+// import { createDrawerNavigator } from '@react-navigation/drawer'
 const Tab = createMaterialBottomTabNavigator()
+// const Drawer = createDrawerNavigator()
 
 export default function App() {
   return (
@@ -42,11 +43,11 @@ export default function App() {
         />
         <Tab.Screen
           name='Notifications'
-          component={NotificationScreen}
+          component={ProfileScreen}
           options={{
-            tabBarLabel: 'Notifications',
+            tabBarLabel: 'Profile',
             tabBarIcon: ({ color }) => (
-              <Ionicons name='notifications' color={color} size={26} />
+              <MaterialCommunityIcons name='face' size={24} color='white' />
             ),
           }}
         />

@@ -8,7 +8,7 @@ import {
 import { NavigationContainer } from '@react-navigation/native'
 import Button from '../Components/Button'
 
-export default function HomeScreen(navigation) {
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -26,11 +26,7 @@ export default function HomeScreen(navigation) {
             marginTop: 30,
           }}
         >
-          <Button
-            label='Sign In'
-            onPress={() => navigation.navigate('SignInScreen')}
-            icon='arrow-forward-circle-outline'
-          />
+          <Button label='Sign In' icon='arrow-forward-circle-outline' />
         </TouchableOpacity>
       </View>
     </View>
